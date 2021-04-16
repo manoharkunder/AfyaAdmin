@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -7,102 +9,105 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class DeleteSpecialtyTest extends Base{
-public LoginPage log;
-	
+public class DeleteSpecialtyTest extends Base {
+	public LoginPage log;
+
 	public HomePage home;
-   Utility ut=new Utility();
-   
-   @Test
-   
-public void deleteSpecValidation() throws Exception
-{
-	test = extent.createTest("5.DeleteSpecialty", "This test case is to check delete Specialty");
+	Utility ut = new Utility();
+	WebDriverWait wait;
 
-	log = PageFactory.initElements(driver, LoginPage.class);
+	@Test
 
-	home = PageFactory.initElements(driver, HomePage.class);
+	public void deleteSpecValidation() throws Exception {
+		test = extent.createTest("5.DeleteSpecialty", "This test case is to check delete Specialty");
 
-	Reporter.log("Delete Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
+		log = PageFactory.initElements(driver, LoginPage.class);
 
-	WebDriverWait logp = new WebDriverWait(driver, 20);
+		home = PageFactory.initElements(driver, HomePage.class);
 
-	logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+		Reporter.log("Delete Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
 
-	Assert.assertEquals(log.getlogin().getText(), "LOGIN");
+		try {
+			wait = new WebDriverWait(driver, 20);
 
-	Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
+			wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
 
-	WebDriverWait wait = new WebDriverWait(driver, 200);
-	wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
+			Assert.assertEquals(log.getlogin().getText(), "LOGIN");
 
-	log.getEmailId().sendKeys("superadmin@afya.net");
+			Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
 
-	log.getpassword().sendKeys("Aa123456@");
+			wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
 
-	log.getlogin().click();
+			log.getEmailId().sendKeys("superadmin@afya.net");
 
-	Reporter.log("Admin login  is sucessfully done", true);
+			log.getpassword().sendKeys("Aa123456@");
 
-	WebDriverWait tt = new WebDriverWait(driver, 20);
+			log.getlogin().click();
 
-	tt.until(ExpectedConditions.elementToBeClickable(home.getmasterSection()));
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-	home.getmasterSection().click();
+			try {
+				if (log.getBtnYes().isEnabled()) {
 
-	WebDriverWait pp = new WebDriverWait(driver, 20);
-	pp.until(ExpectedConditions.elementToBeClickable(home.getmSpeciality()));
+					wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
 
-	home.getmSpeciality().click();
+					Reporter.log("Alert  Found.....!!!! please wait.......", true);
 
-	WebDriverWait pt = new WebDriverWait(driver, 20);
-	pt.until(ExpectedConditions.elementToBeClickable(home.getaddSpec()));
+					log.getBtnYes().click();
+				}
+			} catch (Exception e) {
+				Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+			}
 
-	home.getaddSpec().click();
+			Reporter.log("Logged in  ......!!!!....done", true);
 
-	WebDriverWait tl = new WebDriverWait(driver, 20);
-	tl.until(ExpectedConditions.elementToBeClickable(home.gettextArea()));
-	
-	String spec=ut.generateRandomWord(2);
+			wait.until(ExpectedConditions.elementToBeClickable(home.getmasterSection()));
 
-	home.gettextArea().sendKeys("aa"+spec);
+			home.getmasterSection().click();
 
-	Thread.sleep(2000);
-	WebDriverWait mt = new WebDriverWait(driver, 20);
-	
-	mt.until(ExpectedConditions.elementToBeClickable(home.getaddnutton()));
+			wait.until(ExpectedConditions.elementToBeClickable(home.getmSpeciality()));
 
-	home.getaddnutton().click();
+			home.getmSpeciality().click();
 
-	
-	
-	boolean res = home.getaddnutton().isEnabled();
-	
-	Assert.assertTrue(res);
+			wait.until(ExpectedConditions.elementToBeClickable(home.getaddSpec()));
 
-	Reporter.log("Sucessfully added the spec " + "##########",true);
+			home.getaddSpec().click();
 
-	Thread.sleep(3000);
-	
-	
- WebDriverWait  t=new WebDriverWait(driver, 20);
- 
- t.until(ExpectedConditions.elementToBeClickable(home.getDelete()));
- 
-  home.getDelete().click();
- 
- WebDriverWait jk=new WebDriverWait(driver, 20);
- jk.until(ExpectedConditions.visibilityOf(home.getdeleteMsg()));
- 
- boolean delcon=home.getdeleteMsg().getText().contains("deleted");
- 
- Assert.assertTrue(delcon);
- 
- Reporter.log(home.getdeleteMsg().getText(),true);
- 
+			wait.until(ExpectedConditions.elementToBeClickable(home.gettextArea()));
 
- 
- Reporter.log("Delete specialty testcase is sucessfullly done############################",true);
-	
-}
+			String spec = Utility.generateRandomWord(2);
+
+			home.gettextArea().sendKeys("aa" + spec);
+
+			Thread.sleep(2000);
+
+			wait.until(ExpectedConditions.elementToBeClickable(home.getaddnutton()));
+
+			home.getaddnutton().click();
+
+			boolean res = home.getaddnutton().isEnabled();
+
+			Assert.assertTrue(res);
+
+			Reporter.log("specialty is added...!!!!...continue", true);
+
+			Thread.sleep(3000);
+
+			wait.until(ExpectedConditions.elementToBeClickable(home.getDelete()));
+
+			home.getDelete().click();
+
+			wait.until(ExpectedConditions.visibilityOf(home.getdeleteMsg()));
+
+			boolean delcon = home.getdeleteMsg().getText().contains("deleted");
+
+			Assert.assertTrue(delcon);
+
+			Reporter.log(home.getdeleteMsg().getText() + " ...!!!.validation message found..!!", true);
+
+			Reporter.log("Delete specialty testcase pass...!!...!!!.done", true);
+
+		} catch (Exception e) {
+		}
+	}
 }

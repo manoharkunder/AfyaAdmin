@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 01 15:11:23 IST 2020</td>
+<td>Started on:</td><td>Fri Apr 16 16:40:31 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>1469 seconds (1469466 ms)</td>
+<tr><td>Total time:</td><td>490 seconds (490827 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,109 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.niveus.DeleteOrganizationTest.deleteOrgnizationValidation()'><b>deleteOrgnizationValidation</b><br>Test class: com.niveus.DeleteOrganizationTest<br/>
-<a href="#Output-324946354" onClick='toggleBox("Output-324946354", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-324946354" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-324946354">
-Delete organization script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done################################<br/>
-adding organization testcase is running>>><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: headless chrome=86.0.4240.183)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-53-generic&apos;, java.version: &apos;11.0.9.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.owhw5i}, goog:chromeOptions: {debuggerAddress: localhost:37757}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4b9acf2d537d0d6b1bbe2b6b87f01af4
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:156)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
-	at com.niveus.DeleteOrganizationTest.deleteOrgnizationValidation(DeleteOrganizationTest.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace324946354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace324946354'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: headless chrome=86.0.4240.183)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-53-generic&apos;, java.version: &apos;11.0.9.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.owhw5i}, goog:chromeOptions: {debuggerAddress: localhost:37757}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4b9acf2d537d0d6b1bbe2b6b87f01af4
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:156)
-	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.isEnabled(Unknown Source)
-	at com.niveus.DeleteOrganizationTest.deleteOrgnizationValidation(DeleteOrganizationTest.java:80)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>115</td>
-<td>com.niveus.DeleteOrganizationTest@2fd66ad3</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -179,280 +76,293 @@ Session ID: 4b9acf2d537d0d6b1bbe2b6b87f01af4
 </tr>
 <tr>
 <td title='com.niveus.InValidLoginTest.InvalidLoginValidation()'><b>InvalidLoginValidation</b><br>Test class: com.niveus.InValidLoginTest<br/>
-<a href="#Output-1907178890" onClick='toggleBox("Output-1907178890", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1905830810" onClick='toggleBox("Output-1905830810", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1907178890" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1907178890">
-Invalid  login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Invalid  login script is sucessfully done################################<br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>com.niveus.InValidLoginTest@24a35978</td></tr>
-<tr>
-<td title='com.niveus.OrgSpecialtySearchTest.OrgSpecSearchValidation()'><b>OrgSpecSearchValidation</b><br>Test class: com.niveus.OrgSpecialtySearchTest<br/>
-<a href="#Output-1965282721" onClick='toggleBox("Output-1965282721", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1965282721" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1965282721">
- OrgSpecSearchValidation is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done#####<br/>
-OrgSpecSearchValidation is sucessfully done####################<br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
-<td>com.niveus.OrgSpecialtySearchTest@4fcd19b3</td></tr>
-<tr>
-<td title='com.niveus.SearchUserEmailIDTest.SearchUSerEmailIdValidation()'><b>SearchUSerEmailIdValidation</b><br>Test class: com.niveus.SearchUserEmailIDTest<br/>
-<a href="#Output-1523683407" onClick='toggleBox("Output-1523683407", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1523683407" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1523683407">
- SearchUSerEmailIdValidation is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done#####<br/>
-SearchUSerEmailIdValidation is sucessfully done####################<br/>
-</div>
-</td>
-<td></td>
-<td>11</td>
-<td>com.niveus.SearchUserEmailIDTest@fcd6521</td></tr>
-<tr>
-<td title='com.niveus.UserSearchTest.SearchUSerValidation()'><b>SearchUSerValidation</b><br>Test class: com.niveus.UserSearchTest<br/>
-<a href="#Output-122461713" onClick='toggleBox("Output-122461713", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-122461713" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-122461713">
- USer Search Validation is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done#####<br/>
-User SearchValidation is sucessfully done####################<br/>
-</div>
-</td>
-<td></td>
-<td>11</td>
-<td>com.niveus.UserSearchTest@31f924f5</td></tr>
-<tr>
-<td title='com.niveus.UserLoginTest.UserValidationTest()'><b>UserValidationTest</b><br>Test class: com.niveus.UserLoginTest<br/>
-<a href="#Output-1799424291" onClick='toggleBox("Output-1799424291", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1799424291" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1799424291">
-User login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-User is not a Super Admin or Admin User login script is sucessfully done################################<br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>com.niveus.UserLoginTest@727803de</td></tr>
-<tr>
-<td title='com.niveus.AddAdminTest.addAdminValidation()'><b>addAdminValidation</b><br>Test class: com.niveus.AddAdminTest<br/>
-<a href="#Output-478209179" onClick='toggleBox("Output-478209179", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-478209179" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-478209179">
-Add admin login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done###<br/>
-Add admin testcase is sucessfully done..............##############3#############<br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.niveus.AddAdminTest@4c762604</td></tr>
-<tr>
-<td title='com.niveus.AddOrganizationTest.addOrganizationValiation()'><b>addOrganizationValiation</b><br>Test class: com.niveus.AddOrganizationTest<br/>
-<a href="#Output-265052195" onClick='toggleBox("Output-265052195", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-265052195" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-265052195">
- Add Organization script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done#####<br/>
-Sucessfullt select  the organization<br/>
-addOrganizationValiation TestCase is Pass###############<br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.niveus.AddOrganizationTest@16f7c8c1</td></tr>
-<tr>
-<td title='com.niveus.AddUserTest.addUserValidation()'><b>addUserValidation</b><br>Test class: com.niveus.AddUserTest<br/>
-<a href="#Output-934352027" onClick='toggleBox("Output-934352027", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-934352027" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-934352027">
- addUserValidation script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is  done#####<br/>
-add UserValidation testCase is sucessfully pass##########################<br/>
-</div>
-</td>
-<td></td>
-<td>30</td>
-<td>com.niveus.AddUserTest@376b4233</td></tr>
-<tr>
-<td title='com.niveus.LoginTest.adminLoginValidation()'><b>adminLoginValidation</b><br>Test class: com.niveus.LoginTest<br/>
-<a href="#Output-59103257" onClick='toggleBox("Output-59103257", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-59103257" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-59103257">
-Admin login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done################################<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.niveus.LoginTest@5c18298f</td></tr>
-<tr>
-<td title='com.niveus.SearchAdminTest.adminSearchValidation()'><b>adminSearchValidation</b><br>Test class: com.niveus.SearchAdminTest<br/>
-<a href="#Output-721704146" onClick='toggleBox("Output-721704146", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-721704146" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-721704146">
-Search admin  script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done###<br/>
-Admin Search Testcase  is sucessfully done .........######################<br/>
-</div>
-</td>
-<td></td>
-<td>11</td>
-<td>com.niveus.SearchAdminTest@5204062d</td></tr>
-<tr>
-<td title='com.niveus.ConfigurationTest.configurationValidation()'><b>configurationValidation</b><br>Test class: com.niveus.ConfigurationTest<br/>
-<a href="#Output-683718244" onClick='toggleBox("Output-683718244", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-683718244" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-683718244">
- Orgconfiguration  script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login  is  done####<br/>
-Org Search testcase is running>>>>>>>>>>>>>>>>><br/>
-searchOrgValidation is  done###<br/>
-</div>
-</td>
-<td></td>
-<td>22</td>
-<td>com.niveus.ConfigurationTest@2641e737</td></tr>
-<tr>
-<td title='com.niveus.DeleteSpecialtyTest.deleteSpecValidation()'><b>deleteSpecValidation</b><br>Test class: com.niveus.DeleteSpecialtyTest<br/>
-<a href="#Output-1559817679" onClick='toggleBox("Output-1559817679", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1559817679" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1559817679">
-Delete Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login  is sucessfully done<br/>
-Sucessfully added the spec ##########<br/>
-Specialty Successfully deleted<br/>
-Delete specialty testcase is sucessfullly done############################<br/>
-</div>
-</td>
-<td></td>
-<td>9</td>
-<td>com.niveus.DeleteSpecialtyTest@704921a5</td></tr>
-<tr>
-<td title='com.niveus.EditAdminTest.editAdminValidation()'><b>editAdminValidation</b><br>Test class: com.niveus.EditAdminTest<br/>
-<a href="#Output-507507251" onClick='toggleBox("Output-507507251", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-507507251" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-507507251">
-Edit  admin  script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done###<br/>
-Successfully updated the admin<br/>
-editAdminValidation is sucessfully  done##########################<br/>
+<a href="#Output-1905830810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1905830810">
+Invalid login testcase is running..!!!..please wait..!!!<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Invalid Credentials Invalid  login script is pass....!!!!...done...!!!<br/>
 </div>
 </td>
 <td></td>
 <td>4</td>
-<td>com.niveus.EditAdminTest@27d415d9</td></tr>
+<td>com.niveus.InValidLoginTest@24a35978</td></tr>
+<tr>
+<td title='com.niveus.OrgSpecialtySearchTest.OrgSpecSearchValidation()'><b>OrgSpecSearchValidation</b><br>Test class: com.niveus.OrgSpecialtySearchTest<br/>
+<a href="#Output-907858780" onClick='toggleBox("Output-907858780", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-907858780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-907858780">
+ OrgSpecSearchValidation is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.niveus.OrgSpecialtySearchTest@5204062d</td></tr>
+<tr>
+<td title='com.niveus.SearchUserEmailIDTest.SearchUSerEmailIdValidation()'><b>SearchUSerEmailIdValidation</b><br>Test class: com.niveus.SearchUserEmailIDTest<br/>
+<a href="#Output-1034296050" onClick='toggleBox("Output-1034296050", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1034296050" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1034296050">
+Search user email testcase is running..!!!..please wait...!!<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.niveus.SearchUserEmailIDTest@fcd6521</td></tr>
+<tr>
+<td title='com.niveus.UserSearchTest.SearchUSerValidation()'><b>SearchUSerValidation</b><br>Test class: com.niveus.UserSearchTest<br/>
+<a href="#Output-2096194236" onClick='toggleBox("Output-2096194236", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2096194236" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2096194236">
+user search testcase is running...!!!...please..!!.wait<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.niveus.UserSearchTest@5c18298f</td></tr>
+<tr>
+<td title='com.niveus.UserLoginTest.UserValidationTest()'><b>UserValidationTest</b><br>Test class: com.niveus.UserLoginTest<br/>
+<a href="#Output-1069163325" onClick='toggleBox("Output-1069163325", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1069163325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1069163325">
+user login test is running..!!!...please wait..!!!<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+User is not a Super Admin or Admin..!!!!.. Test case is pass..!!!!..done...<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.niveus.UserLoginTest@727803de</td></tr>
+<tr>
+<td title='com.niveus.AddAdminTest.addAdminValidation()'><b>addAdminValidation</b><br>Test class: com.niveus.AddAdminTest<br/>
+<a href="#Output-1411543296" onClick='toggleBox("Output-1411543296", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1411543296" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1411543296">
+Add admin testcase is running...!!!....<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+Add admin tescase is pass..!!!.done..!!<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.niveus.AddAdminTest@4c762604</td></tr>
+<tr>
+<td title='com.niveus.AddOrganizationTest.addOrganizationValiation()'><b>addOrganizationValiation</b><br>Test class: com.niveus.AddOrganizationTest<br/>
+<a href="#Output-1958607371" onClick='toggleBox("Output-1958607371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1958607371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1958607371">
+Add organization script is running....!!!....<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+Organization selected...please.!!!..continue..!!<br/>
+Add Org testcase ....!!!..pass..!!.done..!!<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.niveus.AddOrganizationTest@16f7c8c1</td></tr>
+<tr>
+<td title='com.niveus.AddUserTest.addUserValidation()'><b>addUserValidation</b><br>Test class: com.niveus.AddUserTest<br/>
+<a href="#Output-431996456" onClick='toggleBox("Output-431996456", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-431996456" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-431996456">
+add user validation testcase  is running...!!!...<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+Add user testcase is ..!!.pass...!!!..done...!!<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.niveus.AddUserTest@4fcd19b3</td></tr>
+<tr>
+<td title='com.niveus.LoginTest.adminLoginValidation()'><b>adminLoginValidation</b><br>Test class: com.niveus.LoginTest<br/>
+<a href="#Output-452015229" onClick='toggleBox("Output-452015229", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-452015229" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-452015229">
+Admin login script is running.....!!!!!!!!..........<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.niveus.LoginTest@27d415d9</td></tr>
+<tr>
+<td title='com.niveus.SearchAdminTest.adminSearchValidation()'><b>adminSearchValidation</b><br>Test class: com.niveus.SearchAdminTest<br/>
+<a href="#Output-400593724" onClick='toggleBox("Output-400593724", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-400593724" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-400593724">
+Search admin  script is running...!!!!!!!!..please wait..<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+Admin Search Test  pass ...!!!!!!!!........<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.niveus.SearchAdminTest@5579bb86</td></tr>
+<tr>
+<td title='com.niveus.ConfigurationTest.configurationValidation()'><b>configurationValidation</b><br>Test class: com.niveus.ConfigurationTest<br/>
+<a href="#Output-1799424291" onClick='toggleBox("Output-1799424291", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1799424291" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1799424291">
+Configuration testcase is running....!!!...<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+please continue..!!..<br/>
+Org search validation done...!!!..please continue..!!<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.niveus.ConfigurationTest@2641e737</td></tr>
+<tr>
+<td title='com.niveus.DeleteOrganizationTest.deleteOrgnizationValidation()'><b>deleteOrgnizationValidation</b><br>Test class: com.niveus.DeleteOrganizationTest<br/>
+<a href="#Output-2117932686" onClick='toggleBox("Output-2117932686", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2117932686" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2117932686">
+Delete organization testcase is runnig....!!..<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+add organization pass...!!!..<br/>
+Org search is done...!!!...<br/>
+</div>
+</td>
+<td></td>
+<td>142</td>
+<td>com.niveus.DeleteOrganizationTest@376b4233</td></tr>
+<tr>
+<td title='com.niveus.DeleteSpecialtyTest.deleteSpecValidation()'><b>deleteSpecValidation</b><br>Test class: com.niveus.DeleteSpecialtyTest<br/>
+<a href="#Output-1494896526" onClick='toggleBox("Output-1494896526", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1494896526" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1494896526">
+Delete Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+specialty is added...!!!!...continue<br/>
+Specialty Successfully deleted ...!!!.validation message found..!!<br/>
+Delete specialty testcase pass...!!...!!!.done<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.niveus.DeleteSpecialtyTest@704921a5</td></tr>
 <tr>
 <td title='com.niveus.EditOrganizationTest.editOrganizationValidation()'><b>editOrganizationValidation</b><br>Test class: com.niveus.EditOrganizationTest<br/>
-<a href="#Output-1713129148" onClick='toggleBox("Output-1713129148", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1235151206" onClick='toggleBox("Output-1235151206", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1713129148" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1713129148">
- Edit Organization  script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done################################<br/>
-Org Search testcase is running>>>>>>>>>>>>>>>>><br/>
-searchOrgValidation is  done#<br/>
-editOrganizationValidation TestCase is sucesfully pass################<br/>
+<a href="#Output-1235151206" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1235151206">
+ Edit Organization testcase is runnig...!!!...!!!..<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+Org Search result found...!!!...<br/>
+edit organization test pass...!!!!...done...!!!<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>com.niveus.EditOrganizationTest@df27fae</td></tr>
+<tr>
+<td title='com.niveus.EditSpecialityTest.editSPecValidation()'><b>editSPecValidation</b><br>Test class: com.niveus.EditSpecialityTest<br/>
+<a href="#Output-758888772" onClick='toggleBox("Output-758888772", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-758888772" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-758888772">
+Edit Specialty TestCase running..!!!..!!!.<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+Speciality is added please continue...!!!..<br/>
+clicked on edit button...!!..!!!.<br/>
+Edit speciality testcase is pass...!!!...done...!!!.. <br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.niveus.EditSpecialityTest@319b92f3</td></tr>
+<tr>
+<td title='com.niveus.LogoutTest.logoutValidationTest()'><b>logoutValidationTest</b><br>Test class: com.niveus.LogoutTest<br/>
+<a href="#Output-274492574" onClick='toggleBox("Output-274492574", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-274492574" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-274492574">
+Admin logout script is running.....!!!!!!!!..........<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+Logout Test Sucess......!!!!....done<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.niveus.LogoutTest@2f0a87b3</td></tr>
+<tr>
+<td title='com.niveus.SearchOrgTest.searchOrgValidationTest()'><b>searchOrgValidationTest</b><br>Test class: com.niveus.SearchOrgTest<br/>
+<a href="#Output-2000880842" onClick='toggleBox("Output-2000880842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2000880842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2000880842">
+Search org Testcase running..!!!!.please wait...!!!<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert Not Found.....!!!!..... please continue.....<br/>
+Logged in  ......!!!!....done<br/>
+search Org test Pass......!!!!!.......<br/>
 </div>
 </td>
 <td></td>
 <td>19</td>
-<td>com.niveus.EditOrganizationTest@df27fae</td></tr>
-<tr>
-<td title='com.niveus.EditSpecialityTest.editSPecValidation()'><b>editSPecValidation</b><br>Test class: com.niveus.EditSpecialityTest<br/>
-<a href="#Output-1911671810" onClick='toggleBox("Output-1911671810", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1911671810" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1911671810">
-Edit Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login  is sucessfully done<br/>
-add spec is sucessfully done ##########<br/>
-clicked on edit button sucessfully......<br/>
-EditTestCase is sucessfully done#################################<br/>
-</div>
-</td>
-<td></td>
-<td>10</td>
-<td>com.niveus.EditSpecialityTest@319b92f3</td></tr>
-<tr>
-<td title='com.niveus.LogoutTest.logoutValidationTest()'><b>logoutValidationTest</b><br>Test class: com.niveus.LogoutTest<br/>
-<a href="#Output-1134976216" onClick='toggleBox("Output-1134976216", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1134976216" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1134976216">
-Admin Logout script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin logout script is sucessfully done################################<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>com.niveus.LogoutTest@2f0a87b3</td></tr>
-<tr>
-<td title='com.niveus.SearchOrgTest.searchOrgValidationTest()'><b>searchOrgValidationTest</b><br>Test class: com.niveus.SearchOrgTest<br/>
-<a href="#Output-477643715" onClick='toggleBox("Output-477643715", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-477643715" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-477643715">
-Admin login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed page is sucessfully displayed<br/>
-Admin login script is sucessfully done################################<br/>
-Org Search testcase is running>>>>>>>>>>>>>>>>><br/>
-searchOrgValidation is sucessfullly done################<br/>
-</div>
-</td>
-<td></td>
-<td>710</td>
-<td>com.niveus.SearchOrgTest@5d11346a</td></tr>
+<td>com.niveus.SearchOrgTest@2fd66ad3</td></tr>
 <tr>
 <td title='com.niveus.SearchSpecialtyTest.searchValidationTest()'><b>searchValidationTest</b><br>Test class: com.niveus.SearchSpecialtyTest<br/>
-<a href="#Output-1812681178" onClick='toggleBox("Output-1812681178", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1193939374" onClick='toggleBox("Output-1193939374", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1812681178" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1812681178">
+<a href="#Output-1193939374" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1193939374">
 Search  Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/>
-Admin login page is sucessfully displayed <br/>
-Admin login  is sucessfully done<br/>
-[[ChromeDriver: chrome on LINUX (e7b12b0f2a04ae7289bc361ed2a57280)] -> xpath: //td[@class='ant-table-cell']/span] search result is sucessfully done...###########################<br/>
+Admin login page  found please continue .......!!!!!.........<br/>
+Alert  Found.....!!!! please wait.......<br/>
+Logged in  ......!!!!....done<br/>
+Anesthesiology specialty found..!!!!!..Test...!!Pass...<br/>
 </div>
 </td>
 <td></td>
-<td>9</td>
-<td>com.niveus.SearchSpecialtyTest@5579bb86</td></tr>
+<td>13</td>
+<td>com.niveus.SearchSpecialtyTest@31f924f5</td></tr>
 </table><p>
 </body>
 </html>

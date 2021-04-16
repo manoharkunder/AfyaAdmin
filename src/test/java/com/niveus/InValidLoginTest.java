@@ -7,46 +7,41 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class InValidLoginTest extends Base
-{
+public class InValidLoginTest extends Base {
 	public LoginPage log;
 
+	WebDriverWait wait;
+
 	@Test
-	public void InvalidLoginValidation() 
-	{
-		test=extent.createTest("18.Invalid LoginTest","This test case is to check invalid login");
+	public void InvalidLoginValidation() {
+		test = extent.createTest("18.Invalid LoginTest", "This test case is to check invalid login");
 
-		log=PageFactory.initElements(driver, LoginPage.class);
+		log = PageFactory.initElements(driver, LoginPage.class);
 
-		Reporter.log("Invalid  login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",true);
+		Reporter.log("Invalid login testcase is running..!!!..please wait..!!!", true);
 
-		WebDriverWait logp=new WebDriverWait(driver, 20);
-		
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+		wait = new WebDriverWait(driver, 20);
 
-		
+		wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
+
 		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
-	
-		Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
-		
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
+		Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
+
 		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
-	
+
 		log.getEmailId().sendKeys("superadmi@afya.net");
-		
+
 		log.getpassword().sendKeys("Aa123456@");
-		
+
 		log.getlogin().click();
-		
-		WebDriverWait wait1=new WebDriverWait(driver, 15);
-		
-		wait1.until(ExpectedConditions.visibilityOf(log.getWrongCredential()));
-		
-		boolean result=log.getWrongCredential().getText().contains("Invalid");
-		
+
+		wait.until(ExpectedConditions.visibilityOf(log.getWrongCredential()));
+
+		boolean result = log.getWrongCredential().getText().contains("Invalid");
+
 		Assert.assertTrue(result);
-		
-		Reporter.log("Invalid  login script is sucessfully done################################",true);
+
+		Reporter.log(log.getWrongCredential().getText() + " Invalid  login script is pass....!!!!...done...!!!", true);
 	}
 }

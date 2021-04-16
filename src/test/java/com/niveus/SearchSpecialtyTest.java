@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,6 +14,7 @@ public class SearchSpecialtyTest extends Base {
 	public LoginPage log;
 
 	public HomePage home;
+	WebDriverWait wait;
 	Utility ut = new Utility();
 
 	@Test
@@ -25,15 +28,14 @@ public class SearchSpecialtyTest extends Base {
 
 		Reporter.log("Search  Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
 
-		WebDriverWait logp = new WebDriverWait(driver, 20);
+		wait = new WebDriverWait(driver, 20);
 
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+		wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
 
 		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
 
-		Reporter.log("Admin login page is sucessfully displayed ", true);
+		Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
 		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
 
 		log.getEmailId().sendKeys("superadmin@afya.net");
@@ -42,31 +44,38 @@ public class SearchSpecialtyTest extends Base {
 
 		log.getlogin().click();
 
-		Reporter.log("Admin login  is sucessfully done", true);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		WebDriverWait tt = new WebDriverWait(driver, 20);
+		try {
+			if (log.getBtnYes().isEnabled()) {
 
-		tt.until(ExpectedConditions.elementToBeClickable(home.getmasterSection()));
+				wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
+
+				Reporter.log("Alert  Found.....!!!! please wait.......", true);
+
+				log.getBtnYes().click();
+			}
+		} catch (Exception e) {
+			Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+		}
+
+		Reporter.log("Logged in  ......!!!!....done", true);
+
+		wait.until(ExpectedConditions.elementToBeClickable(home.getmasterSection()));
 
 		home.getmasterSection().click();
 
-		WebDriverWait pp = new WebDriverWait(driver, 20);
-		pp.until(ExpectedConditions.elementToBeClickable(home.getmSpeciality()));
+		wait.until(ExpectedConditions.elementToBeClickable(home.getmSpeciality()));
 
 		home.getmSpeciality().click();
 
-		home.getSearchSpecialty().sendKeys("Allergy and Immunology");
+		home.getSearchSpecialty().sendKeys("Anesthesiology");
 
-		/*
-		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 */
-		
 		Thread.sleep(6000);
-		boolean res = home.getSearchlist().getText().contains("Allergy and Immunology");
+
+		boolean res = home.getSearchlist().getText().contains("Anesthesiology");
 
 		Assert.assertTrue(res);
-
-		Reporter.log(home.getSearchlist() + " search result is sucessfully done...###########################",true	);
-
+		Reporter.log(home.getSearchlist().getText() + " specialty found..!!!!!..Test...!!Pass...", true);
 	}
 }

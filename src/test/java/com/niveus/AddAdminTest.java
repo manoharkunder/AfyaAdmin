@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
@@ -24,18 +26,16 @@ public class AddAdminTest extends Base {
 
 		adpage = PageFactory.initElements(driver, AdminPage.class);
 
+		Reporter.log("Add admin testcase is running...!!!....", true);
+
 		wait = new WebDriverWait(driver, 20);
-		Reporter.log("Add admin login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
 
-		WebDriverWait logp = new WebDriverWait(driver, 20);
-
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+		wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
 
 		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
 
-		Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
+		Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
 		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
 
 		log.getEmailId().sendKeys("superadmin@afya.net");
@@ -44,7 +44,22 @@ public class AddAdminTest extends Base {
 
 		log.getlogin().click();
 
-		Reporter.log("Admin login script is sucessfully done###", true);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		try {
+			if (log.getBtnYes().isEnabled()) {
+
+				wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
+
+				Reporter.log("Alert  Found.....!!!! please wait.......", true);
+
+				log.getBtnYes().click();
+			}
+		} catch (Exception e) {
+			Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+		}
+
+		Reporter.log("Logged in  ......!!!!....done", true);
 
 		WebDriverWait jj = new WebDriverWait(driver, 10);
 		jj.until(ExpectedConditions.elementToBeClickable(adpage.getadminLink()));
@@ -53,7 +68,7 @@ public class AddAdminTest extends Base {
 		adpage.getaddAdmin().click();
 		adpage.getaFname().sendKeys("sathish");
 		adpage.getaLastName().sendKeys("suresh");
-		adpage.getmailId().sendKeys("sathish" + ut.generateRandomWord(2) + "@gmail.com");
+		adpage.getmailId().sendKeys("sathish" + Utility.generateRandomWord(2) + "@gmail.com");
 		adpage.getpassword().sendKeys("Aa123456@");
 
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
@@ -68,65 +83,21 @@ public class AddAdminTest extends Base {
 		Thread.sleep(5000);
 
 		adpage.getorgdrop().sendKeys("b", Keys.ENTER);
+		try {
+			adpage.getadmindrop().click();
+			adpage.getadmindrop().sendKeys(Keys.ENTER);
+		} catch (Exception e) {
+		}
 
 		wait.until(ExpectedConditions.elementToBeClickable(adpage.getsaveBtn()));
-		/*
-		 * int count=0;
-		 * 
-		 * while(count<=0) {
-		 * 
-		 * try {
-		 * 
-		 * 
-		 * WebDriverWait kl=new WebDriverWait(driver, 20);
-		 * kl.until(ExpectedConditions.elementToBeClickable(adpage.getorgdrop()));
-		 * 
-		 * 
-		 * JavascriptExecutor executor = (JavascriptExecutor) driver;
-		 * 
-		 * executor.executeScript("arguments[0].click();",adpage.getorgdrop());
-		 * 
-		 * 
-		 * 
-		 * 
-		 * WebDriverWait po=new WebDriverWait(driver, 50);
-		 * 
-		 * po.until(ExpectedConditions.elementToBeClickable(adpage.getorgSelect()));
-		 * 
-		 * 
-		 * 
-		 * 
-		 * JavascriptExecutor executor1 = (JavascriptExecutor) driver;
-		 * 
-		 * executor1.executeScript("arguments[0].click();",adpage.getorgSelect());
-		 * 
-		 * 
-		 * count++;
-		 */
-		adpage.getsaveBtn().click();
 
-		/*
-		 * WebDriverWait wait3=new WebDriverWait(driver, 10);
-		 * 
-		 * wait3.until(ExpectedConditions.visibilityOf(adpage.getadminConfirm()));
-		 * 
-		 * 
-		 * break; } catch (Exception e) { e.printStackTrace();
-		 * 
-		 * } }
-		 */
-		/*
-		 * adpage.getsaveBtn().click();
-		 * 
-		 * 
-		 * 
-		 * WebDriverWait wait3=new WebDriverWait(driver, 10);
-		 * wait3.until(ExpectedConditions.visibilityOf(adpage.getadminConfirm()));
-		 */
 		boolean res = adpage.getsaveBtn().isEnabled();
 
 		Assert.assertTrue(res);
-		Reporter.log("Add admin testcase is sucessfully done..............##############3#############", true);
+
+		adpage.getsaveBtn().click();
+
+		Reporter.log("Add admin tescase is pass..!!!.done..!!", true);
 
 	}
 }

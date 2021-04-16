@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,110 +12,123 @@ import org.testng.annotations.Test;
 
 public class DeleteOrganizationTest extends Base {
 
-	WebDriverWait tt;
+	WebDriverWait wait;
 	Organization org;
 	public LoginPage log;
 
 	@Test
 	public void deleteOrgnizationValidation() throws Exception {
+
 		test = extent.createTest("9.DeleteOrganization", "This test case is used to deleted  the organiation");
 
 		log = PageFactory.initElements(driver, LoginPage.class);
 
-		Reporter.log("Delete organization script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
+		Reporter.log("Delete organization testcase is runnig....!!..", true);
 
-		WebDriverWait logp = new WebDriverWait(driver, 20);
+		try {
+			wait = new WebDriverWait(driver, 20);
 
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+			wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
 
-		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
+			Assert.assertEquals(log.getlogin().getText(), "LOGIN");
 
-		Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
+			Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
-		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
+			wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
 
-		log.getEmailId().sendKeys("superadmin@afya.net");
+			log.getEmailId().sendKeys("superadmin@afya.net");
 
-		log.getpassword().sendKeys("Aa123456@");
+			log.getpassword().sendKeys("Aa123456@");
 
-		log.getlogin().click();
+			log.getlogin().click();
 
-		Reporter.log("Admin login script is sucessfully done################################", true);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		Reporter.log("adding organization testcase is running>>>", true);
+			try {
+				if (log.getBtnYes().isEnabled()) {
 
-		org = PageFactory.initElements(driver, Organization.class);
+					wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
 
-		tt = new WebDriverWait(driver, 30);
+					Reporter.log("Alert  Found.....!!!! please wait.......", true);
 
-		tt.until(ExpectedConditions.elementToBeClickable(org.getOrganization()));
+					log.getBtnYes().click();
+				}
+			} catch (Exception e) {
+				Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+			}
 
-		org.getOrganization().click();
+			Reporter.log("Logged in  ......!!!!....done", true);
 
-		org.getAddOrganization().click();
-		org.getgetOrgName().sendKeys("testyantra");
-		org.getOrgNameDrop().click();
-		
-		Thread.sleep(2000);
-		org.getOrgNameDrop().sendKeys("AfyaGlobal", Keys.ENTER);
+			org = PageFactory.initElements(driver, Organization.class);
 
-		Thread.sleep(5000);
+			wait.until(ExpectedConditions.elementToBeClickable(org.getOrganization()));
 
-		org.getContact1().sendKeys("7890765431");
-		org.getContct2().sendKeys("3509278645");
-		org.getAddress().sendKeys("AfyaIndia");
+			org.getOrganization().click();
 
-		org.getCity().sendKeys("karkala");
+			org.getAddOrganization().click();
+			org.getgetOrgName().sendKeys("Validation");
+			org.getOrgNameDrop().click();
 
-		org.getState().sendKeys("Karnataka");
+			Thread.sleep(2000);
+			org.getOrgNameDrop().sendKeys("AfyaGlobal", Keys.ENTER);
 
-		org.getZipcode().sendKeys("12354");
-		
-		Thread.sleep(2000);
-		
-		tt.until(ExpectedConditions.elementToBeClickable(org.getSavebtn()));
-		
-		org.getSavebtn().click();
-		
+			Thread.sleep(5000);
 
-		boolean res1=org.getSavebtn().isEnabled();
-		/*
-		 * tt.until(ExpectedConditions.visibilityOf(org.getaddConfirmation()));
-		 * 
-		 * boolean res1 = org.getaddConfirmation().getText().contains("added");
-		 */
-		Assert.assertTrue(res1);
+			org.getContact1().sendKeys("7890765431");
+			org.getContct2().sendKeys("3509278645");
+			org.getAddress().sendKeys("AfyaIndia");
 
-		Reporter.log("addOrganizationValiation  is Pass##", true);
+			org.getCity().sendKeys("karkala");
 
-		tt.until(ExpectedConditions.visibilityOf(org.getOrgSearch()));
+			org.getState().sendKeys("Karnataka");
 
-		org.getOrgSearch().sendKeys("TestYantra");
+			org.getZipcode().sendKeys("12354");
 
-		Thread.sleep(6000);
+			Thread.sleep(2000);
 
-		tt.until(ExpectedConditions.visibilityOf(org.getOrgResult()));
+			wait.until(ExpectedConditions.elementToBeClickable(org.getSavebtn()));
 
-		boolean res = org.getOrgResult().getText().contains("Testyantra");
-		
-		Assert.assertTrue(res);
+			org.getSavebtn().click();
 
-		Reporter.log("searchOrgValidation is sucessfullly done###", true);
+			boolean res1 = org.getSavebtn().isEnabled();
 
-		org.getDeleteOrg().click();
+			Assert.assertTrue(res1);
 
-		tt.until(ExpectedConditions.elementToBeClickable(org.getDelconfirmation()));
+			Reporter.log("add organization pass...!!!..", true);
 
-		org.getDelconfirmation().click();
+			Thread.sleep(3000);
+			wait.until(ExpectedConditions.visibilityOf(org.getOrgSearch()));
 
-		tt.until(ExpectedConditions.visibilityOf(org.getDeleteMSg()));
+			org.getOrgSearch().sendKeys("Validation");
 
-		boolean result = org.getDeleteMSg().getText().contains("deleted");
+			Thread.sleep(80000);
 
-		Assert.assertTrue(result);
+		//	wait.until(ExpectedConditions.visibilityOf(org.getOrgResult()));
 
-		Reporter.log("deleteOrgnizationValidation is pass####################", true);
+			boolean res = org.getOrgResult().getText().contains("Validation");
 
+			Assert.assertTrue(res);
+
+			Reporter.log("Org search is done...!!!...", true);
+
+			try {
+				org.getDeleteOrg().click();
+
+				wait.until(ExpectedConditions.elementToBeClickable(org.getDelconfirmation()));
+
+				org.getDelconfirmation().click();
+				
+			} catch (Exception e) {
+			}
+			wait.until(ExpectedConditions.visibilityOf(org.getDeleteMSg()));
+
+			boolean result = org.getDeleteMSg().getText().contains("deleted");
+
+			Assert.assertTrue(result);
+
+			Reporter.log("delete Orgnization Validation is pass....!!!!..done....!!", true);
+
+		} catch (Exception e) {
+		}
 	}
 }

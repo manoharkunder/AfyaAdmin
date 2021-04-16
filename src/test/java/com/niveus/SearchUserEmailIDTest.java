@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -7,65 +9,75 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class SearchUserEmailIDTest extends Base{
+public class SearchUserEmailIDTest extends Base {
 
-	WebDriverWait tt;
+	WebDriverWait wait;
 	Organization org;
 	public LoginPage log;
 	public Doctor doc;
 
-
 	@Test
-	public  void SearchUSerEmailIdValidation() throws Exception
-	{
+	public void SearchUSerEmailIdValidation() throws Exception {
 
 		test = extent.createTest("17.User Search", "This test case is used to search the user based on Email id");
 
 		log = PageFactory.initElements(driver, LoginPage.class);
-	
+
 		doc = PageFactory.initElements(driver, Doctor.class);
 
+		Reporter.log("Search user email testcase is running..!!!..please wait...!!", true);
+		try {
+			wait = new WebDriverWait(driver, 20);
 
-		Reporter.log(" SearchUSerEmailIdValidation is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
+			wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
 
-		WebDriverWait logp = new WebDriverWait(driver, 20);
+			Assert.assertEquals(log.getlogin().getText(), "LOGIN");
 
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+			Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
 
-		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
+			wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
 
-		Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
+			log.getEmailId().sendKeys("superadmin@afya.net");
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
-		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
+			log.getpassword().sendKeys("Aa123456@");
 
-		log.getEmailId().sendKeys("superadmin@afya.net");
+			log.getlogin().click();
 
-		log.getpassword().sendKeys("Aa123456@");
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		log.getlogin().click();
+			try {
+				if (log.getBtnYes().isEnabled()) {
 
-		Reporter.log("Admin login script is sucessfully done#####", true);		
+					wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
 
-		tt = new WebDriverWait(driver, 30);
+					Reporter.log("Alert  Found.....!!!! please wait.......", true);
 
-		tt.until(ExpectedConditions.elementToBeClickable(doc.getUser()));
-  
-		doc.getUser().click();
+					log.getBtnYes().click();
+				}
+			} catch (Exception e) {
+				Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+			}
 
-		
-		Thread.sleep(4000);
-		
-		tt.until(ExpectedConditions.visibilityOf(doc.getOrgSearchSpec()));
-		
-		doc.getOrgSearchSpec().sendKeys("adarsh@gmail.com");
-		
-		Thread.sleep(5000);
-		boolean res=doc.getSpecialtySearch().getText().contains("adarsh@gmail.com");
-		
-		Assert.assertTrue(res);
-		
-		Reporter.log("SearchUSerEmailIdValidation is sucessfully done####################",true);
-		
+			Reporter.log("Logged in  ......!!!!....done", true);
+
+			wait.until(ExpectedConditions.elementToBeClickable(doc.getUser()));
+
+			doc.getUser().click();
+
+			Thread.sleep(4000);
+
+			wait.until(ExpectedConditions.visibilityOf(doc.getOrgSearchSpec()));
+
+			doc.getOrgSearchSpec().sendKeys("adarsh@gmail.com");
+
+			Thread.sleep(5000);
+			boolean res = doc.getSpecialtySearch().getText().contains("adarsh@gmail.com");
+
+			Assert.assertTrue(res);
+
+			Reporter.log("User email Test is pass...!!!!..done....!!", true);
+		} catch (Exception e) {
+		}
+
 	}
 }

@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage {
 
-	@FindBy(xpath = "//span[text()='Logout']/..")
+	@FindBy(xpath = "//button[@id='button-logout']")
 	private WebElement logout;
 	
 	public WebElement getlogoutBtn()
@@ -13,7 +13,7 @@ public class HomePage {
 		return logout;
 	}
 	
-	@FindBy(xpath ="//span[text()='MASTER']/ancestor::div[@role='button']")
+	@FindBy(xpath ="//div[@title='MASTER']")
 	private WebElement  mast;
 	
 	public WebElement getmasterSection()

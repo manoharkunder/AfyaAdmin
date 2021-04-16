@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="37" total="55" passed="18" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Add admin testcase is running...!!!....]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Add admin tescase is pass..!!!.done..!!]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Admin login script is running.....!!!!!!!!..........]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Configuration testcase is running....!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[please continue..!!..]]>
+    </line>
+    <line>
+      <![CDATA[Org search validation done...!!!..please continue..!!]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[user search testcase is running...!!!...please..!!.wait]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Search  Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Anesthesiology specialty found..!!!!!..Test...!!Pass...]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[user login test is running..!!!...please wait..!!!]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[User is not a Super Admin or Admin..!!!!.. Test case is pass..!!!!..done...]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Delete Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[specialty is added...!!!!...continue]]>
+    </line>
+    <line>
+      <![CDATA[Specialty Successfully deleted ...!!!.validation message found..!!]]>
+    </line>
+    <line>
+      <![CDATA[Delete specialty testcase pass...!!...!!!.done]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Search admin  script is running...!!!!!!!!..please wait..]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Admin Search Test  pass ...!!!!!!!!........]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[ Edit Organization testcase is runnig...!!!...!!!..]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Org Search result found...!!!...]]>
+    </line>
+    <line>
+      <![CDATA[edit organization test pass...!!!!...done...!!!]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[ OrgSpecSearchValidation is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[add user validation testcase  is running...!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Add user testcase is ..!!.pass...!!!..done...!!]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login testcase is running..!!!..please wait..!!!]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Credentials Invalid  login script is pass....!!!!...done...!!!]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Add organization script is running....!!!....]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Organization selected...please.!!!..continue..!!]]>
+    </line>
+    <line>
+      <![CDATA[Add Org testcase ....!!!..pass..!!.done..!!]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Delete organization testcase is runnig....!!..]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[add organization pass...!!!..]]>
+    </line>
+    <line>
+      <![CDATA[Org search is done...!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Admin logout script is running.....!!!!!!!!..........]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Logout Test Sucess......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Search org Testcase running..!!!!.please wait...!!!]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert Not Found.....!!!!..... please continue.....]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[search Org test Pass......!!!!!.......]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Edit Specialty TestCase running..!!!..!!!.]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[Speciality is added please continue...!!!..]]>
+    </line>
+    <line>
+      <![CDATA[clicked on edit button...!!..!!!.]]>
+    </line>
+    <line>
+      <![CDATA[Edit speciality testcase is pass...!!!...done...!!!.. ]]>
+    </line>
+    <line>
+      <![CDATA[Running in headless mode..!!!...]]>
+    </line>
+    <line>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+    </line>
+    <line>
+      <![CDATA[Search user email testcase is running..!!!..please wait...!!]]>
+    </line>
+    <line>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+    </line>
+    <line>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-04-16T16:40:31 IST" name="Surefire suite" finished-at="2021-04-16T16:48:42 IST" duration-ms="490827">
+    <groups>
+    </groups>
+    <test started-at="2021-04-16T16:40:31 IST" name="Surefire test" finished-at="2021-04-16T16:48:42 IST" duration-ms="490827">
+      <class name="com.niveus.AddAdminTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.AddAdminTest@4c762604]" started-at="2021-04-16T16:40:31 IST" name="setUp" finished-at="2021-04-16T16:40:31 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddAdminTest@4c762604]" started-at="2021-04-16T16:40:31 IST" name="configBc" finished-at="2021-04-16T16:40:33 IST" duration-ms="2087" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="addAdminValidation()[pri:0, instance:com.niveus.AddAdminTest@4c762604]" started-at="2021-04-16T16:40:33 IST" name="addAdminValidation" finished-at="2021-04-16T16:40:51 IST" duration-ms="18422" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Add admin testcase is running...!!!....]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[Add admin tescase is pass..!!!.done..!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addAdminValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddAdminTest@4c762604]" started-at="2021-04-16T16:40:51 IST" name="getResult" finished-at="2021-04-16T16:40:51 IST" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addAdminValidation status=SUCCESS method=AddAdminTest.addAdminValidation()[pri:0, instance:com.niveus.AddAdminTest@4c762604] output=Add admin testcase is running...!!!....]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.AddAdminTest@4c762604]" started-at="2021-04-16T16:48:42 IST" name="flushReport" finished-at="2021-04-16T16:48:42 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.niveus.AddAdminTest -->
+      <class name="com.niveus.DeleteSpecialtyTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.DeleteSpecialtyTest@704921a5]" started-at="2021-04-16T16:42:34 IST" name="configBc" finished-at="2021-04-16T16:42:36 IST" duration-ms="1735" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="deleteSpecValidation()[pri:0, instance:com.niveus.DeleteSpecialtyTest@704921a5]" started-at="2021-04-16T16:42:36 IST" name="deleteSpecValidation" finished-at="2021-04-16T16:42:51 IST" duration-ms="15578" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Delete Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[specialty is added...!!!!...continue]]>
+            </line>
+            <line>
+              <![CDATA[Specialty Successfully deleted ...!!!.validation message found..!!]]>
+            </line>
+            <line>
+              <![CDATA[Delete specialty testcase pass...!!...!!!.done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteSpecValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.DeleteSpecialtyTest@704921a5]" started-at="2021-04-16T16:42:51 IST" name="getResult" finished-at="2021-04-16T16:42:52 IST" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteSpecValidation status=SUCCESS method=DeleteSpecialtyTest.deleteSpecValidation()[pri:0, instance:com.niveus.DeleteSpecialtyTest@704921a5] output=Delete Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.DeleteSpecialtyTest -->
+      <class name="com.niveus.SearchSpecialtyTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchSpecialtyTest@31f924f5]" started-at="2021-04-16T16:42:11 IST" name="configBc" finished-at="2021-04-16T16:42:12 IST" duration-ms="1671" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="searchValidationTest()[pri:0, instance:com.niveus.SearchSpecialtyTest@31f924f5]" started-at="2021-04-16T16:42:12 IST" name="searchValidationTest" finished-at="2021-04-16T16:42:26 IST" duration-ms="13813" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Search  Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[Anesthesiology specialty found..!!!!!..Test...!!Pass...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchSpecialtyTest@31f924f5]" started-at="2021-04-16T16:42:26 IST" name="getResult" finished-at="2021-04-16T16:42:26 IST" duration-ms="67" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchValidationTest status=SUCCESS method=SearchSpecialtyTest.searchValidationTest()[pri:0, instance:com.niveus.SearchSpecialtyTest@31f924f5] output=Search  Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.SearchSpecialtyTest -->
+      <class name="com.niveus.SearchOrgTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchOrgTest@2fd66ad3]" started-at="2021-04-16T16:47:30 IST" name="configBc" finished-at="2021-04-16T16:47:32 IST" duration-ms="1651" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="searchOrgValidationTest()[pri:0, instance:com.niveus.SearchOrgTest@2fd66ad3]" started-at="2021-04-16T16:47:32 IST" name="searchOrgValidationTest" finished-at="2021-04-16T16:47:51 IST" duration-ms="19583" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Search org Testcase running..!!!!.please wait...!!!]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert Not Found.....!!!!..... please continue.....]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[search Org test Pass......!!!!!.......]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchOrgValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchOrgTest@2fd66ad3]" started-at="2021-04-16T16:47:51 IST" name="getResult" finished-at="2021-04-16T16:47:51 IST" duration-ms="67" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchOrgValidationTest status=SUCCESS method=SearchOrgTest.searchOrgValidationTest()[pri:0, instance:com.niveus.SearchOrgTest@2fd66ad3] output=Search org Testcase running..!!!!.please wait...!!!]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.SearchOrgTest -->
+      <class name="com.niveus.EditSpecialityTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.EditSpecialityTest@319b92f3]" started-at="2021-04-16T16:47:51 IST" name="configBc" finished-at="2021-04-16T16:47:53 IST" duration-ms="1450" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="editSPecValidation()[pri:0, instance:com.niveus.EditSpecialityTest@319b92f3]" started-at="2021-04-16T16:47:53 IST" name="editSPecValidation" finished-at="2021-04-16T16:48:09 IST" duration-ms="15714" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Edit Specialty TestCase running..!!!..!!!.]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[Speciality is added please continue...!!!..]]>
+            </line>
+            <line>
+              <![CDATA[clicked on edit button...!!..!!!.]]>
+            </line>
+            <line>
+              <![CDATA[Edit speciality testcase is pass...!!!...done...!!!.. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editSPecValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.EditSpecialityTest@319b92f3]" started-at="2021-04-16T16:48:09 IST" name="getResult" finished-at="2021-04-16T16:48:09 IST" duration-ms="66" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editSPecValidation status=SUCCESS method=EditSpecialityTest.editSPecValidation()[pri:0, instance:com.niveus.EditSpecialityTest@319b92f3] output=Edit Specialty TestCase running..!!!..!!!.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.EditSpecialityTest -->
+      <class name="com.niveus.LoginTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.LoginTest@27d415d9]" started-at="2021-04-16T16:40:51 IST" name="configBc" finished-at="2021-04-16T16:40:53 IST" duration-ms="1492" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="adminLoginValidation()[pri:0, instance:com.niveus.LoginTest@27d415d9]" started-at="2021-04-16T16:40:53 IST" name="adminLoginValidation" finished-at="2021-04-16T16:40:57 IST" duration-ms="4216" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Admin login script is running.....!!!!!!!!..........]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- adminLoginValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.LoginTest@27d415d9]" started-at="2021-04-16T16:40:57 IST" name="getResult" finished-at="2021-04-16T16:40:57 IST" duration-ms="67" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminLoginValidation status=SUCCESS method=LoginTest.adminLoginValidation()[pri:0, instance:com.niveus.LoginTest@27d415d9] output=Admin login script is running.....!!!!!!!!..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.LoginTest -->
+      <class name="com.niveus.EditOrganizationTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.EditOrganizationTest@df27fae]" started-at="2021-04-16T16:43:04 IST" name="configBc" finished-at="2021-04-16T16:43:06 IST" duration-ms="1513" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="editOrganizationValidation()[pri:0, instance:com.niveus.EditOrganizationTest@df27fae]" started-at="2021-04-16T16:43:06 IST" name="editOrganizationValidation" finished-at="2021-04-16T16:43:33 IST" duration-ms="26852" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ Edit Organization testcase is runnig...!!!...!!!..]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[Org Search result found...!!!...]]>
+            </line>
+            <line>
+              <![CDATA[edit organization test pass...!!!!...done...!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editOrganizationValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.EditOrganizationTest@df27fae]" started-at="2021-04-16T16:43:33 IST" name="getResult" finished-at="2021-04-16T16:43:33 IST" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editOrganizationValidation status=SUCCESS method=EditOrganizationTest.editOrganizationValidation()[pri:0, instance:com.niveus.EditOrganizationTest@df27fae] output= Edit Organization testcase is runnig...!!!...!!!..]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.EditOrganizationTest -->
+      <class name="com.niveus.SearchAdminTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchAdminTest@5579bb86]" started-at="2021-04-16T16:42:52 IST" name="configBc" finished-at="2021-04-16T16:42:53 IST" duration-ms="1499" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="adminSearchValidation()[pri:0, instance:com.niveus.SearchAdminTest@5579bb86]" started-at="2021-04-16T16:42:53 IST" name="adminSearchValidation" finished-at="2021-04-16T16:43:04 IST" duration-ms="11329" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Search admin  script is running...!!!!!!!!..please wait..]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[Admin Search Test  pass ...!!!!!!!!........]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- adminSearchValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchAdminTest@5579bb86]" started-at="2021-04-16T16:43:04 IST" name="getResult" finished-at="2021-04-16T16:43:04 IST" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminSearchValidation status=SUCCESS method=SearchAdminTest.adminSearchValidation()[pri:0, instance:com.niveus.SearchAdminTest@5579bb86] output=Search admin  script is running...!!!!!!!!..please wait..]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.SearchAdminTest -->
+      <class name="com.niveus.UserSearchTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UserSearchTest@5c18298f]" started-at="2021-04-16T16:41:42 IST" name="configBc" finished-at="2021-04-16T16:41:43 IST" duration-ms="1732" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="SearchUSerValidation()[pri:0, instance:com.niveus.UserSearchTest@5c18298f]" started-at="2021-04-16T16:41:43 IST" name="SearchUSerValidation" finished-at="2021-04-16T16:42:11 IST" duration-ms="27331" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[user search testcase is running...!!!...please..!!.wait]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SearchUSerValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UserSearchTest@5c18298f]" started-at="2021-04-16T16:42:11 IST" name="getResult" finished-at="2021-04-16T16:42:11 IST" duration-ms="66" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchUSerValidation status=SUCCESS method=UserSearchTest.SearchUSerValidation()[pri:0, instance:com.niveus.UserSearchTest@5c18298f] output=user search testcase is running...!!!...please..!!.wait]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.UserSearchTest -->
+      <class name="com.niveus.InValidLoginTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.InValidLoginTest@24a35978]" started-at="2021-04-16T16:44:32 IST" name="configBc" finished-at="2021-04-16T16:44:34 IST" duration-ms="1434" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="InvalidLoginValidation()[pri:0, instance:com.niveus.InValidLoginTest@24a35978]" started-at="2021-04-16T16:44:34 IST" name="InvalidLoginValidation" finished-at="2021-04-16T16:44:39 IST" duration-ms="4771" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid login testcase is running..!!!..please wait..!!!]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Invalid Credentials Invalid  login script is pass....!!!!...done...!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.InValidLoginTest@24a35978]" started-at="2021-04-16T16:44:39 IST" name="getResult" finished-at="2021-04-16T16:44:39 IST" duration-ms="65" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidLoginValidation status=SUCCESS method=InValidLoginTest.InvalidLoginValidation()[pri:0, instance:com.niveus.InValidLoginTest@24a35978] output=Invalid login testcase is running..!!!..please wait..!!!]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.InValidLoginTest -->
+      <class name="com.niveus.AddUserTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddUserTest@4fcd19b3]" started-at="2021-04-16T16:44:06 IST" name="configBc" finished-at="2021-04-16T16:44:08 IST" duration-ms="1731" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="addUserValidation()[pri:0, instance:com.niveus.AddUserTest@4fcd19b3]" started-at="2021-04-16T16:44:08 IST" name="addUserValidation" finished-at="2021-04-16T16:44:32 IST" duration-ms="24322" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[add user validation testcase  is running...!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[Add user testcase is ..!!.pass...!!!..done...!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addUserValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddUserTest@4fcd19b3]" started-at="2021-04-16T16:44:32 IST" name="getResult" finished-at="2021-04-16T16:44:32 IST" duration-ms="65" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addUserValidation status=SUCCESS method=AddUserTest.addUserValidation()[pri:0, instance:com.niveus.AddUserTest@4fcd19b3] output=add user validation testcase  is running...!!!...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.AddUserTest -->
+      <class name="com.niveus.ConfigurationTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.ConfigurationTest@2641e737]" started-at="2021-04-16T16:40:57 IST" name="configBc" finished-at="2021-04-16T16:40:59 IST" duration-ms="1427" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="configurationValidation()[pri:0, instance:com.niveus.ConfigurationTest@2641e737]" started-at="2021-04-16T16:40:59 IST" name="configurationValidation" finished-at="2021-04-16T16:41:42 IST" duration-ms="42903" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Configuration testcase is running....!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[please continue..!!..]]>
+            </line>
+            <line>
+              <![CDATA[Org search validation done...!!!..please continue..!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configurationValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.ConfigurationTest@2641e737]" started-at="2021-04-16T16:41:42 IST" name="getResult" finished-at="2021-04-16T16:41:42 IST" duration-ms="69" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=configurationValidation status=SUCCESS method=ConfigurationTest.configurationValidation()[pri:0, instance:com.niveus.ConfigurationTest@2641e737] output=Configuration testcase is running....!!!...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.ConfigurationTest -->
+      <class name="com.niveus.UserLoginTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.UserLoginTest@727803de]" started-at="2021-04-16T16:42:26 IST" name="configBc" finished-at="2021-04-16T16:42:28 IST" duration-ms="1561" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="UserValidationTest()[pri:0, instance:com.niveus.UserLoginTest@727803de]" started-at="2021-04-16T16:42:28 IST" name="UserValidationTest" finished-at="2021-04-16T16:42:34 IST" duration-ms="6211" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[user login test is running..!!!...please wait..!!!]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[User is not a Super Admin or Admin..!!!!.. Test case is pass..!!!!..done...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- UserValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.UserLoginTest@727803de]" started-at="2021-04-16T16:42:34 IST" name="getResult" finished-at="2021-04-16T16:42:34 IST" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserValidationTest status=SUCCESS method=UserLoginTest.UserValidationTest()[pri:0, instance:com.niveus.UserLoginTest@727803de] output=user login test is running..!!!...please wait..!!!]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.UserLoginTest -->
+      <class name="com.niveus.AddOrganizationTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddOrganizationTest@16f7c8c1]" started-at="2021-04-16T16:44:39 IST" name="configBc" finished-at="2021-04-16T16:44:40 IST" duration-ms="1474" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="addOrganizationValiation()[pri:0, instance:com.niveus.AddOrganizationTest@16f7c8c1]" started-at="2021-04-16T16:44:40 IST" name="addOrganizationValiation" finished-at="2021-04-16T16:44:58 IST" duration-ms="18214" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Add organization script is running....!!!....]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[Organization selected...please.!!!..continue..!!]]>
+            </line>
+            <line>
+              <![CDATA[Add Org testcase ....!!!..pass..!!.done..!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addOrganizationValiation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddOrganizationTest@16f7c8c1]" started-at="2021-04-16T16:44:58 IST" name="getResult" finished-at="2021-04-16T16:44:59 IST" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addOrganizationValiation status=SUCCESS method=AddOrganizationTest.addOrganizationValiation()[pri:0, instance:com.niveus.AddOrganizationTest@16f7c8c1] output=Add organization script is running....!!!....]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.AddOrganizationTest -->
+      <class name="com.niveus.OrgSpecialtySearchTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.OrgSpecialtySearchTest@5204062d]" started-at="2021-04-16T16:43:33 IST" name="configBc" finished-at="2021-04-16T16:43:34 IST" duration-ms="1554" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="OrgSpecSearchValidation()[pri:0, instance:com.niveus.OrgSpecialtySearchTest@5204062d]" started-at="2021-04-16T16:43:34 IST" name="OrgSpecSearchValidation" finished-at="2021-04-16T16:44:06 IST" duration-ms="31864" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ OrgSpecSearchValidation is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- OrgSpecSearchValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.OrgSpecialtySearchTest@5204062d]" started-at="2021-04-16T16:44:06 IST" name="getResult" finished-at="2021-04-16T16:44:06 IST" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OrgSpecSearchValidation status=SUCCESS method=OrgSpecialtySearchTest.OrgSpecSearchValidation()[pri:0, instance:com.niveus.OrgSpecialtySearchTest@5204062d] output= OrgSpecSearchValidation is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.OrgSpecialtySearchTest -->
+      <class name="com.niveus.SearchUserEmailIDTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.SearchUserEmailIDTest@fcd6521]" started-at="2021-04-16T16:48:09 IST" name="configBc" finished-at="2021-04-16T16:48:10 IST" duration-ms="1514" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="SearchUSerEmailIdValidation()[pri:0, instance:com.niveus.SearchUserEmailIDTest@fcd6521]" started-at="2021-04-16T16:48:10 IST" name="SearchUSerEmailIdValidation" finished-at="2021-04-16T16:48:42 IST" duration-ms="31366" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Search user email testcase is running..!!!..please wait...!!]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SearchUSerEmailIdValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.SearchUserEmailIDTest@fcd6521]" started-at="2021-04-16T16:48:42 IST" name="getResult" finished-at="2021-04-16T16:48:42 IST" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchUSerEmailIdValidation status=SUCCESS method=SearchUserEmailIDTest.SearchUSerEmailIdValidation()[pri:0, instance:com.niveus.SearchUserEmailIDTest@fcd6521] output=Search user email testcase is running..!!!..please wait...!!]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.SearchUserEmailIDTest -->
+      <class name="com.niveus.LogoutTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.LogoutTest@2f0a87b3]" started-at="2021-04-16T16:47:22 IST" name="configBc" finished-at="2021-04-16T16:47:24 IST" duration-ms="1332" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="logoutValidationTest()[pri:0, instance:com.niveus.LogoutTest@2f0a87b3]" started-at="2021-04-16T16:47:24 IST" name="logoutValidationTest" finished-at="2021-04-16T16:47:30 IST" duration-ms="6519" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Admin logout script is running.....!!!!!!!!..........]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[Logout Test Sucess......!!!!....done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logoutValidationTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.LogoutTest@2f0a87b3]" started-at="2021-04-16T16:47:30 IST" name="getResult" finished-at="2021-04-16T16:47:30 IST" duration-ms="69" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logoutValidationTest status=SUCCESS method=LogoutTest.logoutValidationTest()[pri:0, instance:com.niveus.LogoutTest@2f0a87b3] output=Admin logout script is running.....!!!!!!!!..........]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.LogoutTest -->
+      <class name="com.niveus.DeleteOrganizationTest">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.DeleteOrganizationTest@376b4233]" started-at="2021-04-16T16:44:59 IST" name="configBc" finished-at="2021-04-16T16:45:00 IST" duration-ms="1501" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBc -->
+        <test-method signature="deleteOrgnizationValidation()[pri:0, instance:com.niveus.DeleteOrganizationTest@376b4233]" started-at="2021-04-16T16:45:00 IST" name="deleteOrgnizationValidation" finished-at="2021-04-16T16:47:22 IST" duration-ms="142160" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Delete organization testcase is runnig....!!..]]>
+            </line>
+            <line>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
+            </line>
+            <line>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
+            </line>
+            <line>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[add organization pass...!!!..]]>
+            </line>
+            <line>
+              <![CDATA[Org search is done...!!!...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteOrgnizationValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.DeleteOrganizationTest@376b4233]" started-at="2021-04-16T16:47:22 IST" name="getResult" finished-at="2021-04-16T16:47:22 IST" duration-ms="69" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteOrgnizationValidation status=SUCCESS method=DeleteOrganizationTest.deleteOrgnizationValidation()[pri:0, instance:com.niveus.DeleteOrganizationTest@376b4233] output=Delete organization testcase is runnig....!!..]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.niveus.DeleteOrganizationTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

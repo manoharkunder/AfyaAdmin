@@ -16,7 +16,7 @@ public class Utility {
 	 * @param webElement
 	 * @param value
 	 */
-	public void selectByValue(WebElement webElement, String value) {
+	public static  void selectByValue(WebElement webElement, String value) {
 		Select sel = new Select(webElement);
 		sel.selectByValue(value);
 	}
@@ -38,13 +38,13 @@ public class Utility {
 		return pid;
 	}
 
-	public void moveToElement(WebDriver driver, WebElement webelement) {
+	public static void moveToElement(WebDriver driver, WebElement webelement) {
 		Actions act = new Actions(driver);
 		act.moveToElement(webelement).click().perform();
 		;
 	}
 
-	public void hoverMouse(WebDriver driver, WebElement webelement) {
+	public static void hoverMouse(WebDriver driver, WebElement webelement) {
 		Actions act = new Actions(driver);
 		act.moveToElement(webelement).perform();
 	}
@@ -53,7 +53,7 @@ public class Utility {
 	 * 
 	 */
 
-	public String generateRandomWord(int wordLength) {
+	public static  String generateRandomWord(int wordLength) {
 		Random r = new Random();
 		StringBuilder sb = new StringBuilder(wordLength);
 		for (int i = 0; i < wordLength; i++) {
@@ -62,7 +62,7 @@ public class Utility {
 		}
 		return sb.toString();
 	}
-	public  Integer ranndomNumber()
+	public static  Integer ranndomNumber()
 	{
 		Random rand=new Random();
 		return rand.nextInt(100);

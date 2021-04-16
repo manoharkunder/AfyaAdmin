@@ -2,69 +2,87 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Afya admin application is sucessgully launched]]>
+      <![CDATA[Running in headless mode..!!!...]]>
     </line>
     <line>
-      <![CDATA[Add admin login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]>
+      <![CDATA[Afya admin application is  launched!!!!!!!!]]>
     </line>
     <line>
-      <![CDATA[Admin login page is sucessfully displayed page is sucessfully displayed]]>
+      <![CDATA[Delete organization testcase is runnig....!!..]]>
     </line>
     <line>
-      <![CDATA[Admin login script is sucessfully done###]]>
+      <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
     </line>
     <line>
-      <![CDATA[Add admin testcase is sucessfully done..............##############3#############]]>
+      <![CDATA[Alert  Found.....!!!! please wait.......]]>
+    </line>
+    <line>
+      <![CDATA[Logged in  ......!!!!....done]]>
+    </line>
+    <line>
+      <![CDATA[add organization pass...!!!..]]>
+    </line>
+    <line>
+      <![CDATA[Org search is done...!!!...]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-11-11T10:51:20 IST" name="Default suite" finished-at="2020-11-11T10:51:41 IST" duration-ms="20270">
+  <suite started-at="2021-04-16T16:38:49 IST" name="Default suite" finished-at="2021-04-16T16:40:05 IST" duration-ms="76257">
     <groups>
     </groups>
-    <test started-at="2020-11-11T10:51:20 IST" name="Default test" finished-at="2020-11-11T10:51:41 IST" duration-ms="20270">
-      <class name="com.niveus.AddAdminTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.AddAdminTest@4387b79e]" started-at="2020-11-11T10:51:20 IST" name="setUp" finished-at="2020-11-11T10:51:20 IST" duration-ms="237" status="PASS">
+    <test started-at="2021-04-16T16:38:49 IST" name="Default test" finished-at="2021-04-16T16:40:05 IST" duration-ms="76257">
+      <class name="com.niveus.DeleteOrganizationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.DeleteOrganizationTest@1460a8c0]" started-at="2021-04-16T16:38:49 IST" name="setUp" finished-at="2021-04-16T16:38:49 IST" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.AddAdminTest@4387b79e]" started-at="2020-11-11T10:51:20 IST" name="configBc" finished-at="2020-11-11T10:51:26 IST" duration-ms="5760" status="PASS">
+        <test-method is-config="true" signature="configBc()[pri:0, instance:com.niveus.DeleteOrganizationTest@1460a8c0]" started-at="2021-04-16T16:38:49 IST" name="configBc" finished-at="2021-04-16T16:38:52 IST" duration-ms="2766" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Afya admin application is sucessgully launched]]>
+              <![CDATA[Running in headless mode..!!!...]]>
+            </line>
+            <line>
+              <![CDATA[Afya admin application is  launched!!!!!!!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBc -->
-        <test-method signature="addAdminValidation()[pri:0, instance:com.niveus.AddAdminTest@4387b79e]" started-at="2020-11-11T10:51:26 IST" name="addAdminValidation" finished-at="2020-11-11T10:51:41 IST" duration-ms="14462" status="PASS">
+        <test-method signature="deleteOrgnizationValidation()[pri:0, instance:com.niveus.DeleteOrganizationTest@1460a8c0]" started-at="2021-04-16T16:38:52 IST" name="deleteOrgnizationValidation" finished-at="2021-04-16T16:40:05 IST" duration-ms="73329" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Add admin login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]>
+              <![CDATA[Delete organization testcase is runnig....!!..]]>
             </line>
             <line>
-              <![CDATA[Admin login page is sucessfully displayed page is sucessfully displayed]]>
+              <![CDATA[Admin login page  found please continue .......!!!!!.........]]>
             </line>
             <line>
-              <![CDATA[Admin login script is sucessfully done###]]>
+              <![CDATA[Alert  Found.....!!!! please wait.......]]>
             </line>
             <line>
-              <![CDATA[Add admin testcase is sucessfully done..............##############3#############]]>
+              <![CDATA[Logged in  ......!!!!....done]]>
+            </line>
+            <line>
+              <![CDATA[add organization pass...!!!..]]>
+            </line>
+            <line>
+              <![CDATA[Org search is done...!!!...]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addAdminValidation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.AddAdminTest@4387b79e]" started-at="2020-11-11T10:51:41 IST" name="getResult" finished-at="2020-11-11T10:51:41 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- deleteOrgnizationValidation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.niveus.DeleteOrganizationTest@1460a8c0]" started-at="2021-04-16T16:40:05 IST" name="getResult" finished-at="2021-04-16T16:40:05 IST" duration-ms="95" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addAdminValidation status=SUCCESS method=AddAdminTest.addAdminValidation()[pri:0, instance:com.niveus.AddAdminTest@4387b79e] output=Add admin login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>]]]>
+                <![CDATA[[TestResult name=deleteOrgnizationValidation status=SUCCESS method=DeleteOrganizationTest.deleteOrgnizationValidation()[pri:0, instance:com.niveus.DeleteOrganizationTest@1460a8c0] output=Delete organization testcase is runnig....!!..]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.AddAdminTest@4387b79e]" started-at="2020-11-11T10:51:41 IST" name="flushReport" finished-at="2020-11-11T10:52:43 IST" duration-ms="61939" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.DeleteOrganizationTest@1460a8c0]" started-at="2021-04-16T16:40:06 IST" name="flushReport" finished-at="2021-04-16T16:40:06 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- com.niveus.AddAdminTest -->
+      </class> <!-- com.niveus.DeleteOrganizationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

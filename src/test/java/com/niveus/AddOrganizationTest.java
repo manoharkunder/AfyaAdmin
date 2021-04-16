@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,7 +11,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class AddOrganizationTest extends Base {
-	WebDriverWait tt;
+	WebDriverWait wait;
 	Organization org;
 	public LoginPage log;
 
@@ -19,17 +21,16 @@ public class AddOrganizationTest extends Base {
 
 		log = PageFactory.initElements(driver, LoginPage.class);
 
-		Reporter.log(" Add Organization script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
+		Reporter.log("Add organization script is running....!!!....", true);
 
-		WebDriverWait logp = new WebDriverWait(driver, 20);
+		wait = new WebDriverWait(driver, 20);
 
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+		wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
 
 		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
 
-		Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
+		Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
 		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
 
 		log.getEmailId().sendKeys("superadmin@afya.net");
@@ -38,13 +39,27 @@ public class AddOrganizationTest extends Base {
 
 		log.getlogin().click();
 
-		Reporter.log("Admin login script is sucessfully done#####", true);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		try {
+			if (log.getBtnYes().isEnabled()) {
+
+				wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
+
+				Reporter.log("Alert  Found.....!!!! please wait.......", true);
+
+				log.getBtnYes().click();
+			}
+		} catch (Exception e) {
+			Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+		}
+
+		Reporter.log("Logged in  ......!!!!....done", true);
 
 		org = PageFactory.initElements(driver, Organization.class);
 
-		tt = new WebDriverWait(driver, 30);
 
-		tt.until(ExpectedConditions.elementToBeClickable(org.getOrganization()));
+		wait.until(ExpectedConditions.elementToBeClickable(org.getOrganization()));
 
 		org.getOrganization().click();
 		org.getAddOrganization().click();
@@ -53,7 +68,7 @@ public class AddOrganizationTest extends Base {
 		org.getOrgNameDrop().click();
 		org.getOrgNameDrop().sendKeys("AfyaGlobal", Keys.ENTER);
 	 
-		Reporter.log("Sucessfullt select  the organization",true);
+		Reporter.log("Organization selected...please.!!!..continue..!!",true);
 		Thread.sleep(5000);
 
 		org.getContact1().sendKeys("7890765431");
@@ -70,7 +85,7 @@ public class AddOrganizationTest extends Base {
 		
 		Thread.sleep(2000);
 		
-		tt.until(ExpectedConditions.elementToBeClickable(org.getSavebtn()));
+		wait.until(ExpectedConditions.elementToBeClickable(org.getSavebtn()));
 		
 		org.getSavebtn().click();
 		
@@ -78,7 +93,7 @@ public class AddOrganizationTest extends Base {
 		
 		Assert.assertTrue(res);
 		
-		Reporter.log("addOrganizationValiation TestCase is Pass###############", true);
+		Reporter.log("Add Org testcase ....!!!..pass..!!.done..!!", true);
 
 	}
 }

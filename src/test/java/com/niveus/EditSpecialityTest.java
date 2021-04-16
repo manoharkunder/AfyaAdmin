@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -8,35 +10,32 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-
 public class EditSpecialityTest extends Base {
-public LoginPage log;
-	
-	public HomePage home;
-   Utility ut=new Utility();
-	
+	public LoginPage log;
 
+	public HomePage home;
+	Utility ut = new Utility();
+
+	WebDriverWait wait;
 
 	@Test
-	public void editSPecValidation() throws Exception
-	{
+	public void editSPecValidation() throws Exception {
 		test = extent.createTest("4.Editspecialty", "This test case is to check EditSpecialty");
 
 		log = PageFactory.initElements(driver, LoginPage.class);
 
 		home = PageFactory.initElements(driver, HomePage.class);
 
-		Reporter.log("Edit Specialty script  is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
+		Reporter.log("Edit Specialty TestCase running..!!!..!!!.", true);
 
-		WebDriverWait logp = new WebDriverWait(driver, 20);
+		wait = new WebDriverWait(driver, 20);
 
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+		wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
 
 		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
 
-		Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
+		Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
 		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
 
 		log.getEmailId().sendKeys("superadmin@afya.net");
@@ -45,82 +44,72 @@ public LoginPage log;
 
 		log.getlogin().click();
 
-		Reporter.log("Admin login  is sucessfully done", true);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		WebDriverWait tt = new WebDriverWait(driver, 20);
+		try {
+			if (log.getBtnYes().isEnabled()) {
 
-		tt.until(ExpectedConditions.elementToBeClickable(home.getmasterSection()));
+				wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
+
+				Reporter.log("Alert  Found.....!!!! please wait.......", true);
+
+				log.getBtnYes().click();
+			}
+		} catch (Exception e) {
+			Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+		}
+
+		Reporter.log("Logged in  ......!!!!....done", true);
+
+		wait.until(ExpectedConditions.elementToBeClickable(home.getmasterSection()));
 
 		home.getmasterSection().click();
 
-		WebDriverWait pp = new WebDriverWait(driver, 20);
-		pp.until(ExpectedConditions.elementToBeClickable(home.getmSpeciality()));
+		wait.until(ExpectedConditions.elementToBeClickable(home.getmSpeciality()));
 
 		home.getmSpeciality().click();
 
-		WebDriverWait pt = new WebDriverWait(driver, 20);
-		pt.until(ExpectedConditions.elementToBeClickable(home.getaddSpec()));
+		wait.until(ExpectedConditions.elementToBeClickable(home.getaddSpec()));
 
 		home.getaddSpec().click();
 
-		WebDriverWait tl = new WebDriverWait(driver, 20);
-		tl.until(ExpectedConditions.elementToBeClickable(home.gettextArea()));
-		
-		String spec=ut.generateRandomWord(2);
+		wait.until(ExpectedConditions.elementToBeClickable(home.gettextArea()));
 
-		home.gettextArea().sendKeys("aa"+spec);
-		
+		String spec = Utility.generateRandomWord(2);
+
+		home.gettextArea().sendKeys("aa" + spec);
+
 		Thread.sleep(2000);
 
+		wait.until(ExpectedConditions.elementToBeClickable(home.getaddnutton()));
 
-		WebDriverWait mt = new WebDriverWait(driver, 20);
-		mt.until(ExpectedConditions.elementToBeClickable(home.getaddnutton()));
-
-		
 		home.getaddnutton().click();
-		/*
-		 * WebDriverWait ppt = new WebDriverWait(driver, 30);
-		 * 
-		 * ppt.until(ExpectedConditions.visibilityOf(home.getconformSpec()))
-		 */;
 
 		boolean res = home.getaddnutton().isEnabled();
-		
+
 		Assert.assertTrue(res);
-	
-		Reporter.log("add spec is sucessfully done ##########",true);
-		
-		Thread.sleep(4000);		
-		
-		  tt.until(ExpectedConditions.elementToBeClickable(home.geteditButton()));
-		  
-		  home.geteditButton().click();
-		  
-		  Reporter.log("clicked on edit button sucessfully......",true);
-		
-		  JavascriptExecutor jse = (JavascriptExecutor)driver;
-		  jse.executeScript("arguments[0].value='no';", home.gettextArea());
-		  
-		  home.getUpdatebtn().click();
-		  
-		  boolean k=home.getUpdatebtn().isEnabled();
-		  
-		  
-			/*
-			 * WebDriverWait jj=new WebDriverWait(driver, 20);
-			 * 
-			 * jj.until(ExpectedConditions.visibilityOf(home.getConfirnUpdate()));
-			 * 
-			 * boolean k=home.getConfirnUpdate().getText().contains("updated");
-			 */
-		  
-		  Assert.assertTrue(k);
-		  
-			/*
-			 * Reporter.log(home.getConfirnUpdate().getText(),true);
-			 */		  
-		  Reporter.log("EditTestCase is sucessfully done#################################",true);
-		  
+
+		Reporter.log("Speciality is added please continue...!!!..", true);
+
+		Thread.sleep(4000);
+
+		wait.until(ExpectedConditions.elementToBeClickable(home.geteditButton()));
+
+		home.geteditButton().click();
+
+		Reporter.log("clicked on edit button...!!..!!!.", true);
+
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].value='no';", home.gettextArea());
+
+		home.getUpdatebtn().click();
+
+		boolean k = home.getUpdatebtn().isEnabled();
+
+		Assert.assertTrue(k);
+
+		Reporter.log("Edit speciality testcase is pass...!!!...done...!!!.. ", true);
+
 	}
-		 
+
 }

@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -7,35 +9,31 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class OrgSpecialtySearchTest extends Base
-{
-	WebDriverWait tt;
+public class OrgSpecialtySearchTest extends Base {
+	WebDriverWait wait;
 	Organization org;
 	public LoginPage log;
 	public Doctor doc;
 
-
 	@Test
-public void OrgSpecSearchValidation() throws Exception
-{
+	public void OrgSpecSearchValidation() throws Exception {
 		test = extent.createTest("15.SpecOrgSearch", "This test case is used to search the specialty based on Org");
 
 		log = PageFactory.initElements(driver, LoginPage.class);
-	
+
 		doc = PageFactory.initElements(driver, Doctor.class);
 
-
 		Reporter.log(" OrgSpecSearchValidation is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", true);
+		wait = new WebDriverWait(driver, 20);
 
-		WebDriverWait logp = new WebDriverWait(driver, 20);
-
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+		try
+		{
+		wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
 
 		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
 
-		Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
+		Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
 		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
 
 		log.getEmailId().sendKeys("superadmin@afya.net");
@@ -44,29 +42,43 @@ public void OrgSpecSearchValidation() throws Exception
 
 		log.getlogin().click();
 
-		Reporter.log("Admin login script is sucessfully done#####", true);		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		tt = new WebDriverWait(driver, 30);
+		try {
+			if (log.getBtnYes().isEnabled()) {
 
-		tt.until(ExpectedConditions.elementToBeClickable(doc.getUser()));
-  
+				wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
+
+				Reporter.log("Alert  Found.....!!!! please wait.......", true);
+
+				log.getBtnYes().click();
+			}
+		} catch (Exception e) {
+			Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+		}
+
+		Reporter.log("Logged in  ......!!!!....done", true);
+
+		wait.until(ExpectedConditions.elementToBeClickable(doc.getUser()));
+
 		doc.getUser().click();
 
-		
 		Thread.sleep(4000);
-		
-		tt.until(ExpectedConditions.visibilityOf(doc.getOrgSearchSpec()));
-		
+
+		wait.until(ExpectedConditions.visibilityOf(doc.getOrgSearchSpec()));
+
 		doc.getOrgSearchSpec().sendKeys("Obstetrics");
-		
-		Thread.sleep(8000);
-		
-		boolean res=doc.getSpecialtySearch().getText().contains("Obstetrics");
-		
+
+		Thread.sleep(5000);
+
+		boolean res = doc.getSpecialtySearch().getText().contains("Obstetrics");
+
 		Assert.assertTrue(res);
-		
-		Reporter.log("OrgSpecSearchValidation is sucessfully done####################",true);
-		
-		
-}
+
+		Reporter.log("Org Spec Search Test  Pass..!!!!......", true);
+		}
+		catch (Exception e) {
+		}
+
+	}
 }

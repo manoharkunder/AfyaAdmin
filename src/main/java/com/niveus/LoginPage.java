@@ -41,4 +41,12 @@ public class LoginPage {
 	{
 		return invalid;
 	}
+	
+	@FindBy(xpath = "//button[@type='submit']/span[text()='Yes']")
+	private WebElement yes;
+	
+	public WebElement getBtnYes()
+	{
+		return yes;
+	}
 }

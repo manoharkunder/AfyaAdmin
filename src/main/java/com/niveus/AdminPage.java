@@ -4,115 +4,117 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AdminPage {
-@FindBy(xpath = "//a[@href='/admin-list']")
-private WebElement admin;
+	@FindBy(xpath = "//a[@href='/admin-list']")
+	private WebElement admin;
 
-public WebElement getadminLink()
-{
-	return admin;
-}
+	public WebElement getadminLink() {
+		return admin;
+	}
 
-@FindBy(xpath ="//a [@href='/add-admin']")
-private WebElement addadmin;
+	@FindBy(xpath = "//a [@href='/add-admin']")
+	private WebElement addadmin;
 
-public WebElement getaddAdmin()
-{
-	return addadmin;
-}
-@FindBy(id = "first_name")
-private WebElement fname;
+	public WebElement getaddAdmin() {
+		return addadmin;
+	}
 
-public WebElement getaFname() {
-	return fname;
-}
+	@FindBy(id = "first_name")
+	private WebElement fname;
 
-@FindBy(id = "last_name")
-private WebElement lname;
+	public WebElement getaFname() {
+		return fname;
+	}
 
-public WebElement getaLastName()
-{
-	return lname;
-	
-}
-@FindBy(id = "email")
-private WebElement mail;
+	@FindBy(id = "last_name")
+	private WebElement lname;
 
-public WebElement getmailId() {
-	return mail;
-}
-@FindBy(id = "password")
-private WebElement pwd;
+	public WebElement getaLastName() {
+		return lname;
 
-public WebElement getpassword()
-{
-	return pwd;
-}
+	}
 
-@FindBy(id = "Organization")
-private WebElement org;
+	@FindBy(id = "email")
+	private WebElement mail;
 
-public WebElement getorgdrop()
-{
-	return org;
-}
-@FindBy(xpath = "//div[@class='ant-select-item-option-content']")
-private WebElement orgsel;
+	public WebElement getmailId() {
+		return mail;
+	}
 
-public WebElement getorgSelect()
-{
-	return orgsel;
-}
+	@FindBy(id = "password")
+	private WebElement pwd;
 
-@FindBy(xpath = "//span[text()='Save']")
+	public WebElement getpassword() {
+		return pwd;
+	}
 
-private WebElement getSave;
+	@FindBy(id = "Organization")
+	private WebElement org;
 
-public WebElement getsaveBtn()
-{
-	return getSave;
-}
-@FindBy(xpath = "//input[@placeholder='Search Admin']")
-private WebElement search;
+	public WebElement getorgdrop() {
+		return org;
+	}
 
-public WebElement getadminSearch()
-{
-	return search;
-}
-@FindBy(xpath = "//thead[@class='ant-table-thead']/following-sibling::tbody//span")
-private WebElement adresult;
+	@FindBy(xpath = "//div[@class='ant-select-item-option-content']")
+	private WebElement orgsel;
 
-public WebElement getadminResult()
-{
-	 return adresult; 
-}
-@FindBy(xpath = "//span[contains(text(),'added')]")
-private WebElement confirm;
+	public WebElement getorgSelect() {
+		return orgsel;
+	}
 
-public WebElement getadminConfirm()
-{
-return confirm;	
-}
-@FindBy(xpath  = "//li[@id='table-action']")
-private WebElement editadmin;
+	@FindBy(xpath = "//span[text()='Save']")
 
-public WebElement getEditAdmin()
-{
-	return editadmin;
-}
+	private WebElement getSave;
 
-@FindBy(xpath = "//span[text()='Update']")
-private WebElement ubtn;
+	public WebElement getsaveBtn() {
+		return getSave;
+	}
 
-public WebElement getUpdateBtn()
-{
-	return ubtn;
-}
-@FindBy(xpath = "//span[contains(text(),'updated')]")
-private WebElement update;
+	@FindBy(xpath = "//input[@placeholder='Search Admin']")
+	private WebElement search;
 
+	public WebElement getadminSearch() {
+		return search;
+	}
 
-public WebElement getConfirmUpdate()
-{
-	return update;
-}
+	@FindBy(xpath = "//thead[@class='ant-table-thead']/following-sibling::tbody//span")
+	private WebElement adresult;
+
+	public WebElement getadminResult() {
+		return adresult;
+	}
+
+	@FindBy(xpath = "//span[contains(text(),'added')]")
+	private WebElement confirm;
+
+	public WebElement getadminConfirm() {
+		return confirm;
+	}
+
+	@FindBy(xpath = "//li[@id='table-action']")
+	private WebElement editadmin;
+
+	public WebElement getEditAdmin() {
+		return editadmin;
+	}
+
+	@FindBy(xpath = "//span[text()='Update']")
+	private WebElement ubtn;
+
+	public WebElement getUpdateBtn() {
+		return ubtn;
+	}
+
+	@FindBy(xpath = "//span[contains(text(),'updated')]")
+	private WebElement update;
+
+	public WebElement getConfirmUpdate() {
+		return update;
+	}
+
+	@FindBy(xpath = "//input[@id='adminType']")
+	private WebElement admindrop;
+
+	public WebElement getadmindrop() {
+		return admindrop;
+	}
 }

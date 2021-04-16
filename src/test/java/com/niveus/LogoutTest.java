@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -7,48 +9,61 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class LogoutTest extends  Base {
+public class LogoutTest extends Base {
 
 	public LoginPage log;
 	public HomePage home;
 
+	WebDriverWait wait;
+
 	@Test
-	public void logoutValidationTest()
-	{
-		test=extent.createTest("2.Logout","This test case is to check Logout ");
+	public void logoutValidationTest() {
+		test = extent.createTest("2.Logout", "This test case is to check Logout ");
 
-		log=PageFactory.initElements(driver, LoginPage.class);
+		log = PageFactory.initElements(driver, LoginPage.class);
 
-		home=PageFactory.initElements(driver, HomePage.class);
+		home = PageFactory.initElements(driver, HomePage.class);
 
-		Reporter.log("Admin Logout script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",true);
+		Reporter.log("Admin logout script is running.....!!!!!!!!..........", true);
 
-		WebDriverWait logp=new WebDriverWait(driver, 20);
-		
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+		wait = new WebDriverWait(driver, 20);
 
-		
+		wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
+
 		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
-	
-		Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
-		
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
+		Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
+
 		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
-	
+
 		log.getEmailId().sendKeys("superadmin@afya.net");
-		
+
 		log.getpassword().sendKeys("Aa123456@");
-		
+
 		log.getlogin().click();
-		
-		WebDriverWait oo=new WebDriverWait(driver, 20);
-		oo.until(ExpectedConditions.elementToBeClickable(home.getlogoutBtn()));
-		
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		try {
+			if (log.getBtnYes().isEnabled()) {
+
+				wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
+
+				Reporter.log("Alert  Found.....!!!! please wait.......", true);
+
+				log.getBtnYes().click();
+			}
+		} catch (Exception e) {
+			Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+		}
+
+		Reporter.log("Logged in  ......!!!!....done", true);
+
+		wait.until(ExpectedConditions.elementToBeClickable(home.getlogoutBtn()));
+
 		home.getlogoutBtn().click();
-		
-		Reporter.log("Admin logout script is sucessfully done################################",true);
-		
-		
+
+		Reporter.log("Logout Test Sucess......!!!!....done", true);
+
 	}
 }

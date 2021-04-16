@@ -1,5 +1,7 @@
 package com.niveus;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -7,68 +9,71 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class SearchOrgTest extends Base{
-	WebDriverWait tt;
+public class SearchOrgTest extends Base {
+	WebDriverWait wait;
 	Organization org;
 	public LoginPage log;
 
-	
 	@Test
-	public void searchOrgValidationTest() throws Exception
-	{
-		test=extent.createTest("7.OrgSearch","This test case is used to search the organiation");
+	public void searchOrgValidationTest() throws Exception {
+		test = extent.createTest("7.OrgSearch", "This test case is used to search the organiation");
 
+		log = PageFactory.initElements(driver, LoginPage.class);
+		org = PageFactory.initElements(driver, Organization.class);
 
-		log=PageFactory.initElements(driver, LoginPage.class);
-
-		Reporter.log("Admin login script is running.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",true);
-
-		WebDriverWait logp=new WebDriverWait(driver, 20);
+		Reporter.log("Search org Testcase running..!!!!.please wait...!!!", true);
 		
-		logp.until(ExpectedConditions.visibilityOf(log.getlogin()));
+		wait = new WebDriverWait(driver, 20);
 
-		
+		wait.until(ExpectedConditions.visibilityOf(log.getlogin()));
+
 		Assert.assertEquals(log.getlogin().getText(), "LOGIN");
-	
-		Reporter.log("Admin login page is sucessfully displayed page is sucessfully displayed", true);
-		
 
-		WebDriverWait wait = new WebDriverWait(driver, 200);
+		Reporter.log("Admin login page  found please continue .......!!!!!.........", true);
+
 		wait.until(ExpectedConditions.elementToBeClickable(log.getEmailId()));
-	
+
 		log.getEmailId().sendKeys("superadmin@afya.net");
-		
+
 		log.getpassword().sendKeys("Aa123456@");
-		
+
 		log.getlogin().click();
-		
-		
-		Reporter.log("Admin login script is sucessfully done################################",true);
-		
-		Reporter.log("Org Search testcase is running>>>>>>>>>>>>>>>>>",true);
-	
-		
-		org=PageFactory.initElements(driver, Organization.class);
-		
-		 tt=new WebDriverWait(driver, 20);
-		
-		 tt.until(ExpectedConditions.elementToBeClickable(org.getOrganization()));
-		
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		try {
+			if (log.getBtnYes().isEnabled()) {
+
+				wait.until(ExpectedConditions.elementToBeClickable(log.getBtnYes()));
+
+				Reporter.log("Alert  Found.....!!!! please wait.......", true);
+
+				log.getBtnYes().click();
+			}
+		} catch (Exception e) {
+			Reporter.log("Alert Not Found.....!!!!..... please continue.....", true);
+		}
+
+		Reporter.log("Logged in  ......!!!!....done", true);
+
+		wait.until(ExpectedConditions.elementToBeClickable(org.getOrganization()));
+
 		org.getOrganization().click();
-		
+
 		Thread.sleep(3000);
-		
-		tt.until(ExpectedConditions.visibilityOf(org.getOrgSearch()));
-		
-		org.getOrgSearch().sendKeys("Afya");
-		
+
+		wait.until(ExpectedConditions.visibilityOf(org.getOrgSearch()));
+
+		org.getOrgSearch().sendKeys("lacare");
+
 		Thread.sleep(3000);
-		
-		tt.until(ExpectedConditions.visibilityOf(org.getOrgResult()));
-	
-		boolean res=org.getOrgResult().getText().contains("Afya");
+
+		wait.until(ExpectedConditions.visibilityOf(org.getOrgResult()));
+
+		boolean res = org.getOrgResult().getText().contains("LACare");
+
 		Assert.assertTrue(res);
-		
-		Reporter.log("searchOrgValidation is sucessfullly done################",true);
+
+		Reporter.log("search Org test Pass......!!!!!.......", true);
 	}
 }

@@ -10,11 +10,11 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.CapabilityType;
 import org.testng.ITestNGListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -132,7 +132,7 @@ public class Base {
 		passedCount = passedCount + passed;
 		failureCount = failureCount + failed;
 		skippedCount = skippedCount + skipped;
-		// driver.quit();
+		driver.quit();
 	}
 
 	@AfterSuite
@@ -142,6 +142,7 @@ public class Base {
 		// flush all the information to the extent report
 		extent.flush();
 		// Send Email
+
 		SendEmail email = new SendEmail();
 		email.sendEmail(passedCount, failureCount, skippedCount);
 
@@ -151,42 +152,69 @@ public class Base {
 
 	@BeforeClass
 
-	public void configBc() {
+	public void configBc() throws Exception {
+
+		File f = new File("src/test/java");
+		File fs = new File(f, "data.properties");
+		String launcher = "/Launch browser";
+
+		inputStream = new FileInputStream(fs.getAbsolutePath());
+
+		properties.load(inputStream);
+
 		/*
 		 * below code is used the launch the browser
 		 */
 
-	  // driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notifications");
+
+		if (properties.getProperty("browser").equalsIgnoreCase(launcher)) {
+			driver = new ChromeDriver();
+			Reporter.log("..!!!...browser launched...!!!", true);
+
+		} else {
+
+			Reporter.log("Running in headless mode..!!!...", true);
+
+			options.addArguments("--headless", "--disable-gpu", "--blink-settings=imagesEnabled=false");
+
+			options.setPageLoadStrategy(PageLoadStrategy.NONE);
+
+			options.addArguments("enable-features=NetworkServiceInProcess");
+
+			options.addArguments("headless");
+
+			driver = new ChromeDriver(options);
+		}
+
+		properties.getProperty("url");
+
+		driver.navigate().to(properties.getProperty("url"));
+
+		// driver.navigate().to("https://staging.afya.chat/");
+
+		driver.manage().window().maximize();
+
+		Reporter.log(driver.getTitle() + "Afya admin application is  launched!!!!!!!!", true);
 
 		/*
 		 * below code is used to run the automation in headless mode
 		 */
+		/*
+		 * ChromeOptions options = new ChromeOptions();
+		 * options.addArguments("--disable-notifications");
+		 * options.addArguments("--headless", "--disable-gpu",
+		 * "--blink-settings=imagesEnabled=false");
+		 * 
+		 * options.setPageLoadStrategy(PageLoadStrategy.NONE);
+		 * 
+		 * options.addArguments("enable-features=NetworkServiceInProcess");
+		 * 
+		 * options.addArguments("headless");
+		 * 
+		 * driver = new ChromeDriver(options);
+		 */
 
-		
-		
-		
-		
-		  
-		  ChromeOptions options = new ChromeOptions();
-		  options.addArguments("--headless", "--disable-web-security",
-		  "--ignore-certificate-errors", "--allow-running-insecure-content",
-		  "--allow-insecure-localhost", "--no-sandbox", "--lang=en_US",
-		  "--window-size=1920,1080", "--start-maximized", "--disable-gpu",
-		  "--test-type"); options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,
-		  true); options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		  options.setExperimentalOption("useAutomationExtension", false);
-		  options.setExperimentalOption("excludeSwitches", new String[] {
-		  "enable-automation" }); driver = new ChromeDriver(options);
-		  
-		  
-		  
-		 
-		System.out.println("browser is launched");
-
-		driver.navigate().to("https://uat.afya.chat/");
-
-		driver.manage().window().maximize();
-
-		Reporter.log(driver.getTitle() + "Afya admin application is sucessgully launched", true);
 	}
 }
